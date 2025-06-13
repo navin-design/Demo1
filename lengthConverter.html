@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper
+        {
+            height:500px;
+            width:400px;
+            background-color:green;
+            margin:200px;
+            padding:30px;
+            border-radius:20px;
+
+        }
+         #wrapper div
+         {
+            display:flex;
+            justify-content:center;
+          
+         }
+         h2
+         {
+            display:flex;
+            justify-content:center;
+            letter-spacing:1px;
+            color:blue;
+         }
+         input
+         {
+            border-radius:5px;
+            border:2px solid black;
+            margin-top:30px;
+         }
+         input:active
+         {
+            border:none;
+         }
+         button
+         {
+            margin-top:20px;
+
+         }
+         button:hover
+         {
+            cursor:pointer;
+         }
+         #result
+         {
+            color:white;
+            font-size:32px;
+            margin-top:20px;
+         }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h2 id="title">CM to Inches</h2>
+        <div id="div1">
+           <input type="text" id ="input" placeholder="length in cm">
+
+        </div>
+        <div>
+            
+        </div>
+        <div>
+            <button type="submit" onclick="c()" >Convert to inches</button>
+        </div>
+        <div id="result">
+          
+        </div>
+    </div>
+    <script>
+
+function c()
+{
+    let input = document.getElementById("input");
+    let cmValue = Num(input.value);
+    let inchValue = cmValue/2.54;
+    let result = document.getElementById("result");
+    result.innerHTML="output";
+}
+
+
+
+        
+        </script>
+    
+</body>
+</html>
